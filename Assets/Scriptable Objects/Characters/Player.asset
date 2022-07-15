@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3cd4c02c88648829d428905fa20686, type: 3}
+  m_Name: Player
+  m_EditorClassIdentifier: 
+  name: Player
+  health: 0
+  maxHealth: 100
+  magicActions:
+  - action: {fileID: 11400000, guid: 5d9f4a07dfc044051b31ebb45b480a1d, type: 2}
+    bias: 0
+    width: 6
+  - action: {fileID: 11400000, guid: 48cc527c7a4f545e4a89b29de5faf589, type: 2}
+    bias: 0
+    width: 3
+  defenseActions:
+  - action: {fileID: 11400000, guid: 694bb0d3f4b544ff88d7afac3ade687b, type: 2}
+    bias: 0
+    width: 6
+  - action: {fileID: 11400000, guid: 290f31ecbb2e7469682638befa5e3371, type: 2}
+    bias: 0
+    width: 3
+  attackActions:
+  - action: {fileID: 11400000, guid: 64f8427c17cf444b08db26315a87608a, type: 2}
+    bias: 0
+    width: 6
+  - action: {fileID: 11400000, guid: b92b870ea107b409798e93104c95c8af, type: 2}
+    bias: 0
+    width: 3
