@@ -4,19 +4,30 @@
       "name": "NPM Registry",
       "url": "https://registry.npmjs.org",
       "scopes": [
-          "com.unity-atoms.unity-atoms-core",
-          "com.unity-atoms.unity-atoms-base-atoms",
-          "com.unity-atoms.unity-atoms-fsm",
-          "com.unity-atoms.unity-atoms-mobile",
-          "com.unity-atoms.unity-atoms-mono-hooks",
-          "com.unity-atoms.unity-atoms-tags",
-          "com.unity-atoms.unity-atoms-scene-mgmt",
-          "com.unity-atoms.unity-atoms-ui",
-          "com.unity-atoms.unity-atoms-input-system"
+        "com.unity-atoms.unity-atoms-core",
+        "com.unity-atoms.unity-atoms-base-atoms",
+        "com.unity-atoms.unity-atoms-fsm",
+        "com.unity-atoms.unity-atoms-mobile",
+        "com.unity-atoms.unity-atoms-mono-hooks",
+        "com.unity-atoms.unity-atoms-tags",
+        "com.unity-atoms.unity-atoms-scene-mgmt",
+        "com.unity-atoms.unity-atoms-ui",
+        "com.unity-atoms.unity-atoms-input-system"
       ]
     }
   ],
   "dependencies": {
+    "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
+    "com.unity-atoms.unity-atoms-base-atoms": "4.4.5",
+    "com.unity-atoms.unity-atoms-core": "4.4.5",
+    "com.unity-atoms.unity-atoms-fsm": "4.4.5",
+    "com.unity-atoms.unity-atoms-input-system": "4.4.5",
+    "com.unity-atoms.unity-atoms-mobile": "4.4.5",
+    "com.unity-atoms.unity-atoms-mono-hooks": "4.4.5",
+    "com.unity-atoms.unity-atoms-scene-mgmt": "4.4.5",
+    "com.unity-atoms.unity-atoms-tags": "4.4.5",
+    "com.unity-atoms.unity-atoms-ui": "4.4.5",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.15.18",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.15",
@@ -57,15 +68,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity-atoms.unity-atoms-core": "4.4.5",
-    "com.unity-atoms.unity-atoms-base-atoms": "4.4.5",
-    "com.unity-atoms.unity-atoms-fsm": "4.4.5",
-    "com.unity-atoms.unity-atoms-mobile": "4.4.5",
-    "com.unity-atoms.unity-atoms-mono-hooks": "4.4.5",
-    "com.unity-atoms.unity-atoms-tags": "4.4.5",
-    "com.unity-atoms.unity-atoms-scene-mgmt": "4.4.5",
-    "com.unity-atoms.unity-atoms-ui": "4.4.5",
-    "com.unity-atoms.unity-atoms-input-system": "4.4.5"
+    "com.unity.modules.xr": "1.0.0"
   }
 }

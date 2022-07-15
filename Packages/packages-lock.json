@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.dbrizov.naughtyattributes": {
+      "version": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8a8fa5a9659a6d63f196391c71e06c4286c8acd7"
+    },
     "com.unity-atoms.unity-atoms-base-atoms": {
       "version": "4.4.5",
       "depth": 0,
@@ -91,6 +98,12 @@
         "com.unity-atoms.unity-atoms-base-atoms": "4.4.5"
       },
       "url": "https://registry.npmjs.org"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.collab-proxy": {
       "version": "1.15.18",
