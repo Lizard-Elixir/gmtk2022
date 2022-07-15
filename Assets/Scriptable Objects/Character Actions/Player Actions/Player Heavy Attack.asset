@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player Heavy Attack
   m_EditorClassIdentifier: 
   name: Player Light Attack
-  type: 2
+  type: 3
   value: 0

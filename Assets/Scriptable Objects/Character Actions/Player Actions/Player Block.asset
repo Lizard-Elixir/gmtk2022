@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player Block
   m_EditorClassIdentifier: 
   name: Player Light Attack
-  type: 1
+  type: 2
   value: 0

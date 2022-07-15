@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player Major Heal
   m_EditorClassIdentifier: 
   name: Player Light Attack
-  type: 0
+  type: 1
   value: 0
