@@ -26,6 +26,12 @@ public class CardSystem : MonoBehaviour {
 
 	private void Awake() {
 		canvas = GetComponent<Canvas>();
+		canvas.enabled = false;
+	}
+
+	public void ContinueSequence() {
+		print("sdkjg");
+		continueSequence = true;
 	}
 
 	[Button]
@@ -46,6 +52,7 @@ public class CardSystem : MonoBehaviour {
 			text.text = narrativeCard.text[i];
 
 			yield return new WaitForSeconds(1);
+			continueSequence = false;
 			continuePrompt.enabled = true;
 			yield return new WaitUntil(() => continueSequence);
 		}
