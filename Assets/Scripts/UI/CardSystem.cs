@@ -1,10 +1,15 @@
+using System;
 using System.Collections;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class CardSystem : MonoBehaviour {
+
+	public event Action CardSystemStart = delegate {};
+
+	public event Action CardSystemFinished = delegate {};
 
 	[Header("Settings")]
 	[SerializeField]
@@ -19,19 +24,14 @@ public class CardSystem : MonoBehaviour {
 	private TextMeshProUGUI text;
 	[SerializeField]
 	private TextMeshProUGUI continuePrompt;
+	[SerializeField]
+	private Button continueButton;
 
 	private Canvas canvas;
-
-	private bool continueSequence;
 
 	private void Awake() {
 		canvas = GetComponent<Canvas>();
 		canvas.enabled = false;
-	}
-
-	public void ContinueSequence() {
-		print("sdkjg");
-		continueSequence = true;
 	}
 
 	[Button]
@@ -43,6 +43,7 @@ public class CardSystem : MonoBehaviour {
 
 	private IEnumerator StartSequence(Card narrativeCard) {
 		// show
+		CardSystemStart?.Invoke();
 		canvas.enabled = true;
 
 		for (int i = 0; i < narrativeCard.text.Length; i++) {
@@ -51,13 +52,12 @@ public class CardSystem : MonoBehaviour {
 
 			text.text = narrativeCard.text[i];
 
-			yield return new WaitForSeconds(1);
-			continueSequence = false;
+			yield return new WaitForSeconds(.5f);
 			continuePrompt.enabled = true;
-			yield return new WaitUntil(() => continueSequence);
+			yield return new WaitUntil(() => UnityEngine.InputSystem.Mouse.current.leftButton.wasPressedThisFrame);
 		}
 
 		canvas.enabled = false;
+		CardSystemFinished?.Invoke();
 	}
-
 }
