@@ -13,25 +13,31 @@ MonoBehaviour:
   m_Name: Neko Enemy
   m_EditorClassIdentifier: 
   name: Tabs, The Treasurer
-  maxHealth: 100
+  maxHealth: 150
   magicActions:
-  - action: {fileID: 11400000, guid: 08f1043b79d17494586dd90ba8be7e46, type: 2}
+  - action: {fileID: 11400000, guid: 0bd52917acff2594a8220d307c4cc53c, type: 2}
     bias: 0
+    width: 8
+  - action: {fileID: 11400000, guid: 4f7110a565db5d249b7c2c6db98a1ea3, type: 2}
+    bias: 0.78
     width: 6
-  - action: {fileID: 11400000, guid: 59d08adb6edf74a1db4335b44d74ece6, type: 2}
-    bias: 0
-    width: 3
   defenseActions:
-  - action: {fileID: 11400000, guid: ca787c73300ec4aa1bd33c2e000c0bff, type: 2}
+  - action: {fileID: 11400000, guid: 64613a7580a7ccb43aa533728286c28b, type: 2}
     bias: 0
     width: 6
-  - action: {fileID: 11400000, guid: 720b3440686434a30b089e89ad1d28a9, type: 2}
+  - action: {fileID: 11400000, guid: 5672ae02a4d06a04ca85dd2a5a00297b, type: 2}
+    bias: 0
+    width: 5
+  - action: {fileID: 11400000, guid: 8bea22bd72335f14188605d1c4889786, type: 2}
     bias: 0
     width: 3
   attackActions:
-  - action: {fileID: 11400000, guid: 4e47c45c6290c4d3da4335b5d2209691, type: 2}
+  - action: {fileID: 11400000, guid: 00eab463537eb854583cee4826d84b15, type: 2}
     bias: 0
     width: 6
-  - action: {fileID: 11400000, guid: 51baad935f22944e89b2d23334e76b4d, type: 2}
+  - action: {fileID: 11400000, guid: 0c0b8119b008a35419f867e55e00e056, type: 2}
     bias: 0
-    width: 3
+    width: 6
+  - action: {fileID: 11400000, guid: eb049077d1c79be46b129ec3cdc8ee70, type: 2}
+    bias: 0
+    width: 5

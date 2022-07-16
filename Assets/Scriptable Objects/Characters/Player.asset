@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   name: The Unlucky Player
-  maxHealth: 100
+  maxHealth: 150
   magicActions:
   - action: {fileID: 11400000, guid: e30adf208b9401f409f7851e7dbcdde7, type: 2}
     bias: 0

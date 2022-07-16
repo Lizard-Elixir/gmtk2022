@@ -15,23 +15,26 @@ MonoBehaviour:
   name: Alphin, The King's Horse
   maxHealth: 100
   magicActions:
-  - action: {fileID: 11400000, guid: 08f1043b79d17494586dd90ba8be7e46, type: 2}
+  - action: {fileID: 11400000, guid: 702adf0ac56a5ec438e3126cef4f5221, type: 2}
     bias: 0
-    width: 6
-  - action: {fileID: 11400000, guid: 59d08adb6edf74a1db4335b44d74ece6, type: 2}
-    bias: 0
-    width: 3
+    width: 10
+  - action: {fileID: 11400000, guid: 9000cf6d25d990f44a650a5a69676144, type: 2}
+    bias: 0.153
+    width: 4
   defenseActions:
-  - action: {fileID: 11400000, guid: ca787c73300ec4aa1bd33c2e000c0bff, type: 2}
+  - action: {fileID: 11400000, guid: 5336a956deeac324b8a0e049ac2592fc, type: 2}
+    bias: 0
+    width: 8
+  - action: {fileID: 11400000, guid: 86a9ae5172a9de540a796d70620a4230, type: 2}
     bias: 0
     width: 6
-  - action: {fileID: 11400000, guid: 720b3440686434a30b089e89ad1d28a9, type: 2}
-    bias: 0
-    width: 3
   attackActions:
-  - action: {fileID: 11400000, guid: 4e47c45c6290c4d3da4335b5d2209691, type: 2}
-    bias: 0
+  - action: {fileID: 11400000, guid: 55e23ab7895bc124ea0f55b117a6ee1f, type: 2}
+    bias: 0.122
     width: 6
-  - action: {fileID: 11400000, guid: 51baad935f22944e89b2d23334e76b4d, type: 2}
-    bias: 0
-    width: 3
+  - action: {fileID: 11400000, guid: 2bf7e8d3c834f164789cf9e335c38531, type: 2}
+    bias: 0.378
+    width: 4
+  - action: {fileID: 11400000, guid: b195755858f959449b4386797f8cf006, type: 2}
+    bias: 0.77
+    width: 4

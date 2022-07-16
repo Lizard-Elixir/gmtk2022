@@ -12,26 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3cd4c02c88648829d428905fa20686, type: 3}
   m_Name: Shooting Star Enemy
   m_EditorClassIdentifier: 
-  name: Starcannon Odysian
-  maxHealth: 100
+  name: Odysian, The Starcannon
+  maxHealth: 300
   magicActions:
-  - action: {fileID: 11400000, guid: 08f1043b79d17494586dd90ba8be7e46, type: 2}
+  - action: {fileID: 11400000, guid: 815c592c6792a1e49920b06b17cae225, type: 2}
     bias: 0
     width: 6
-  - action: {fileID: 11400000, guid: 59d08adb6edf74a1db4335b44d74ece6, type: 2}
-    bias: 0
+  - action: {fileID: 11400000, guid: 13270c49b50ba1f48af23a3b1c3374b2, type: 2}
+    bias: 0.588
+    width: 4
+  - action: {fileID: 11400000, guid: 171f7b650080a134aa27c8e4d5c41f3b, type: 2}
+    bias: 0.37
+    width: 5
+  - action: {fileID: 11400000, guid: 38ab39aec3382024aa49605148a50840, type: 2}
+    bias: 0.269
     width: 3
+  - action: {fileID: 11400000, guid: f46cd957d0d63154b9e37a6d527a45ba, type: 2}
+    bias: 0.426
+    width: 6
   defenseActions:
-  - action: {fileID: 11400000, guid: ca787c73300ec4aa1bd33c2e000c0bff, type: 2}
+  - action: {fileID: 11400000, guid: 0476a13ced0d37c4890d3de5516c7bbd, type: 2}
     bias: 0
     width: 6
-  - action: {fileID: 11400000, guid: 720b3440686434a30b089e89ad1d28a9, type: 2}
-    bias: 0
-    width: 3
+  - action: {fileID: 11400000, guid: 2d458518709147e489904acb5e46cda8, type: 2}
+    bias: 0.333
+    width: 6
+  - action: {fileID: 11400000, guid: d1bae6137b33b4547b276ce912eeb7bf, type: 2}
+    bias: 0.255
+    width: 4
+  - action: {fileID: 11400000, guid: 98d819ab616f8264d8c4e4018c8d0c55, type: 2}
+    bias: 0.44
+    width: 4
+  - action: {fileID: 11400000, guid: cf71194fabc894b48a8ed6d3275414a5, type: 2}
+    bias: 0.458
+    width: 4
   attackActions:
-  - action: {fileID: 11400000, guid: 4e47c45c6290c4d3da4335b5d2209691, type: 2}
+  - action: {fileID: 11400000, guid: bed3bf0111742e249a9238a0b41e441e, type: 2}
     bias: 0
-    width: 6
-  - action: {fileID: 11400000, guid: 51baad935f22944e89b2d23334e76b4d, type: 2}
-    bias: 0
-    width: 3
+    width: 7
+  - action: {fileID: 11400000, guid: 8c62ede3598d8da44b91d84aaea5145a, type: 2}
+    bias: 0.102
+    width: 7

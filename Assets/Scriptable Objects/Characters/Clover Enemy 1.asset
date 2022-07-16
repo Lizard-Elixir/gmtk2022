@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3cd4c02c88648829d428905fa20686, type: 3}
   m_Name: Clover Enemy 1
   m_EditorClassIdentifier: 
-  name: Marinda, The Baroness of Clovers
-  maxHealth: 100
+  name: Marinda, The Baronet of Clovers
+  maxHealth: 200
   magicActions:
   - action: {fileID: 11400000, guid: bc14b9d8008d2e94a86ce193dec1e335, type: 2}
     bias: 0
