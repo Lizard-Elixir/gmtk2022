@@ -1,7 +1,6 @@
 using NaughtyAttributes;
 using UnityEngine;
 
-
 public abstract class CharacterAction : ScriptableObject {
 	public new string name;
 	public ActionType type;

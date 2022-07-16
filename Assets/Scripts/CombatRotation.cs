@@ -34,6 +34,12 @@ public class CombatRotation : MonoBehaviour {
 	[SerializeField]
 	private UnityEvent onExecutionPhase;
 
+	private EnemyAI enemyAI;
+
+	private void Awake() {
+		enemyAI = GetComponent<EnemyAI>();
+	}
+
 	private void StartEncounterWithEnemy() => StartEncounter(enemyData.character);
 
 	public void StartEncounter(Character enemy) {
@@ -49,14 +55,26 @@ public class CombatRotation : MonoBehaviour {
 	}
 
 	public void StartRollDicePhase() {
+
+		// generate what dice were rolled for both the player and the enemy
+
+		// add that to their values
+
+		// begin the choose action phase
+
 		onSetRollDicePhase.Invoke();
 	}
 
 	public void StartChooseActionPhase() {
+
+		// have the enemy determine what action they're going to do
+		ActionType enemyAction = enemyAI.ChooseActionToExecute();
+
 		onChooseActionPhase.Invoke();
 	}
 
-	public void StartExecutionPhase() {
+	public void StartExecutionPhase(CharacterAction playerAction, CharacterAction enemyAction) {
+
 		onExecutionPhase.Invoke();
 	}
 
