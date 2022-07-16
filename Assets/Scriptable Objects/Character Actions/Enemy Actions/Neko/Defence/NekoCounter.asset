@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7abadad14da8ad4e894a5a4e3ddc294, type: 3}
+  m_Script: {fileID: 11500000, guid: ad5ef97ed94a4e0449bbeb7dd0c2c600, type: 3}
   m_Name: NekoCounter
   m_EditorClassIdentifier: 
-  name: Counter
-  type: 2
+  name: 
+  type: 0
   value: 0
+  counterDamageFactor: 0
