@@ -36,6 +36,9 @@ public class CombatRotation : MonoBehaviour {
 
 	private EnemyAI enemyAI;
 
+
+	bool d8Assign, d6Assign, d4Assign;
+
 	private void Awake() {
 		enemyAI = GetComponent<EnemyAI>();
 	}
@@ -165,6 +168,80 @@ public class CombatRotation : MonoBehaviour {
 		{
 			enemyData.magic.Value = 0;
 			enemyData.health.Value -= 20;
+		}
+	}
+
+
+	public void startD8Assign()
+    {
+		d8Assign = true;
+		d6Assign = false;
+		d4Assign = false;
+		Debug.Log("D8 Assign");
+    }
+
+	public void startD6Assign()
+	{
+		d8Assign = false;
+		d6Assign = true;
+		d4Assign = false;
+		Debug.Log("D6 Assign");
+	}
+
+	public void startD4Assign()
+	{
+		d8Assign = false;
+		d6Assign = false;
+		d4Assign = true;
+		Debug.Log("D4 Assign");
+	}
+
+
+	public void assignPlayerAttackDie()
+    {
+		if (d4Assign)
+		{
+			playerData.D4.SetValue(ActionType.Attack);
+		}
+		else if (d6Assign)
+        {
+			playerData.D6.SetValue(ActionType.Attack);
+		}
+        else if (d8Assign)
+        {
+			playerData.D8.SetValue(ActionType.Attack);
+		}
+    }
+
+	public void assignPlayerMagicDie()
+	{
+		if (d4Assign)
+		{
+			playerData.D4.SetValue(ActionType.Magic);
+		}
+		else if (d6Assign)
+		{
+			playerData.D6.SetValue(ActionType.Magic);
+		}
+		else if (d8Assign)
+		{
+			playerData.D8.SetValue(ActionType.Magic);
+		}
+	}
+
+	public void assignPlayerDefenceDie()
+	{
+		if (d4Assign)
+		{
+			playerData.D4.SetValue(ActionType.Defense);
+		}
+		else if (d6Assign)
+		{
+			playerData.D6.SetValue(ActionType.Defense);
+		}
+		else if (d8Assign)
+		{
+			playerData.D8.SetValue(ActionType.Defense);
 		}
 	}
 
