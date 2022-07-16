@@ -39,6 +39,8 @@ public class CombatRotation : MonoBehaviour {
 
 	bool d8Assign, d6Assign, d4Assign;
 
+	public ActionType chosenActionType;
+
 	private void Awake() {
 		enemyAI = GetComponent<EnemyAI>();
 	}
@@ -244,6 +246,50 @@ public class CombatRotation : MonoBehaviour {
 			playerData.D8.SetValue(ActionType.Defense);
 		}
 	}
+
+	public void resolvePhase()
+    {
+		//find the actions that are going to given
+		CharacterAction enemyAction = enemyAI.GetActionToExcecute(enemyAI.ChooseActionToExecute());
+		CharacterAction chosenAction = null;
+		if (chosenActionType == ActionType.Attack)
+        {
+			chosenAction = playerData.character.GetActionToExecute(chosenActionType,playerData.attack.Value);
+        }
+        else if (chosenActionType == ActionType.Defense)
+        {
+			chosenAction = playerData.character.GetActionToExecute(chosenActionType, playerData.defense.Value);
+		}
+		else if (chosenActionType == ActionType.Magic)
+		{
+			chosenAction = playerData.character.GetActionToExecute(chosenActionType, playerData.magic.Value);
+		}
+		resolveActions(chosenAction, enemyAction);
+		resolveHealthMod();
+    }
+
+    private void resolveHealthMod()
+    {
+		playerData.health.Value += playerData.character.modToHealth;
+		playerData.character.modToHealth = 0;
+		enemyData.health.Value += enemyData.character.modToHealth;
+		enemyData.character.modToHealth = 0;
+	}
+
+    void resolveActions(CharacterAction playerAction, CharacterAction enemyAction)
+    {
+        //if an action is a defence-bar action, do it last.
+        if (playerAction.type == ActionType.Defense)
+        {
+			enemyAction.DoAction(playerData.character,enemyData.character);
+			playerAction.DoAction(enemyData.character, playerData.character);
+        }
+        else if (enemyAction.type == ActionType.Defense)
+        {
+			playerAction.DoAction(enemyData.character, playerData.character);
+			enemyAction.DoAction(playerData.character, enemyData.character);
+		}
+    }
 
 
 	[System.Serializable]

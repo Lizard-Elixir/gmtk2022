@@ -1,5 +1,6 @@
 using NaughtyAttributes;
 using UnityEngine;
+using UnityAtoms;
 
 [CreateAssetMenu(menuName = "Character")]
 public class Character : ScriptableObject {
@@ -32,6 +33,26 @@ public class Character : ScriptableObject {
 
 		return new ActionData();
 	}
+
+	public CharacterAction GetActionToExecute(ActionType type, int value)
+    {
+		CharacterAction action = null;
+
+		if (type == ActionType.Attack)
+		{
+			action = GetAttackAction(value).action;
+		}
+		else if (type == ActionType.Defense)
+		{
+			action = GetDefenseAction(value).action;
+		}
+		else if (type == ActionType.Magic)
+		{
+			action = GetMagicAction(value).action;
+		}
+
+		return action;
+    }
 
 	[System.Serializable]
 	public class ActionData : INameableElement {
