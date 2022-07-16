@@ -14,8 +14,24 @@ public class Character : ScriptableObject {
 	[NameElements]
 	public ActionData[] attackActions;
 
+	public ActionData GetMagicAction(int magicValue) => GetActionAtValue(magicActions, magicValue);
+	public ActionData GetDefenseAction(int defenseValue) => GetActionAtValue(defenseActions, defenseValue);
+	public ActionData GetAttackAction(int attackValue) => GetActionAtValue(attackActions, attackValue);
+
+	private ActionData GetActionAtValue(ActionData[] data, int value) {
+		for (int i = 0; i < data.Length; i++) {
+			if (value < data[i].width) {
+				return data[i];
+			} else {
+				value -= data[i].width;
+			}
+		}
+
+		return new ActionData();
+	}
+
 	[System.Serializable]
-	public struct ActionData : INameableElement {
+	public class ActionData : INameableElement {
 		public CharacterAction action;
 		[Range(0, 1)]
 		public float bias;

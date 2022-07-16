@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce3cd4c02c88648829d428905fa20686, type: 3}
+  m_Name: Test Enemy
+  m_EditorClassIdentifier: 
+  name: Test Enemy
+  maxHealth: 100
+  magicActions:
+  - action: {fileID: 11400000, guid: 08f1043b79d17494586dd90ba8be7e46, type: 2}
+    bias: 0
+    width: 6
+  - action: {fileID: 11400000, guid: 59d08adb6edf74a1db4335b44d74ece6, type: 2}
+    bias: 0
+    width: 3
+  defenseActions:
+  - action: {fileID: 11400000, guid: ca787c73300ec4aa1bd33c2e000c0bff, type: 2}
+    bias: 0
+    width: 6
+  - action: {fileID: 11400000, guid: 720b3440686434a30b089e89ad1d28a9, type: 2}
+    bias: 0
+    width: 3
+  attackActions:
+  - action: {fileID: 11400000, guid: 4e47c45c6290c4d3da4335b5d2209691, type: 2}
+    bias: 0
+    width: 6
+  - action: {fileID: 11400000, guid: 51baad935f22944e89b2d23334e76b4d, type: 2}
+    bias: 0
+    width: 3

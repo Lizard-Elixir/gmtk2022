@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9ef2bbbd1414f3ca68ce816c80b7a2, type: 3}
   m_Name: Player Block
   m_EditorClassIdentifier: 
-  name: Player Light Attack
+  name: Player Block
   type: 2
   value: 0
