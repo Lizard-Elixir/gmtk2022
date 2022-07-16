@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce3cd4c02c88648829d428905fa20686, type: 3}
-  m_Name: Test Enemy
+  m_Name: Shooting Star Enemy
   m_EditorClassIdentifier: 
-  name: Test Enemy
+  name: Starcannon Odysian
   maxHealth: 100
   magicActions:
   - action: {fileID: 11400000, guid: 08f1043b79d17494586dd90ba8be7e46, type: 2}
