@@ -8,8 +8,12 @@ public class CounterAction : CharacterAction
     [Header("Counter Variables")]
     [SerializeField]
     float counterDamageFactor; //% of incoming damage thrown back at the enemy
-    public override void DoAction()
+    public override void DoAction(Character caster, Character target)
     {
-        //Negates *value* amount of damage and sends back *counterDamageFactor*% back to the enemy.
+        if (caster.modToHealth > 0)
+        {
+            caster.modToHealth += value;
+            target.modToHealth -= Mathf.RoundToInt(value * counterDamageFactor);
+        }
     }
 }

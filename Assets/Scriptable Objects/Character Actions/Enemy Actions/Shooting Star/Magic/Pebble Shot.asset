@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c8ebe1da2e6cb44850c7f4aee7fd50, type: 3}
   m_Name: Pebble Shot
   m_EditorClassIdentifier: 
-  name: 
+  name: Pebble Shot
   type: 0
-  value: 0
+  value: 15

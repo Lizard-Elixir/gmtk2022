@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Meteor Storm
   type: 1
-  value: 0
+  value: 40

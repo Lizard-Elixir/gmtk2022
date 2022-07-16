@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Forced Donation
   type: 3
-  value: 0
-  drainHealingFactor: 0
+  value: 20
+  drainHealingFactor: 1

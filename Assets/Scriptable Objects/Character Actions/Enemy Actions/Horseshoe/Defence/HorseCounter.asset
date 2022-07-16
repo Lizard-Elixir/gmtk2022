@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Counter
   type: 2
-  value: 0
-  counterDamageFactor: 0
+  value: 10
+  counterDamageFactor: 0.5

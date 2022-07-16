@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Headbutt
   type: 3
-  value: 0
+  value: 20

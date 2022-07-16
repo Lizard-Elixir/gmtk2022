@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Evaporate
   type: 1
-  value: 0
-  drainHealingFactor: 0
+  value: 30
+  drainHealingFactor: 0.5

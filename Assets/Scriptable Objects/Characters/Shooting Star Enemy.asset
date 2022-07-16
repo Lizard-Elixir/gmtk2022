@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Odysian, The Starcannon
   maxHealth: 300
+  modToHealth: 0
   magicActions:
   - action: {fileID: 11400000, guid: 815c592c6792a1e49920b06b17cae225, type: 2}
     bias: 0
@@ -27,7 +28,7 @@ MonoBehaviour:
   - action: {fileID: 11400000, guid: 38ab39aec3382024aa49605148a50840, type: 2}
     bias: 0.269
     width: 3
-  - action: {fileID: 11400000, guid: f46cd957d0d63154b9e37a6d527a45ba, type: 2}
+  - action: {fileID: 11400000, guid: f4f3163dd2f3e584da7da007c768a2e3, type: 2}
     bias: 0.426
     width: 6
   defenseActions:
@@ -40,11 +41,8 @@ MonoBehaviour:
   - action: {fileID: 11400000, guid: d1bae6137b33b4547b276ce912eeb7bf, type: 2}
     bias: 0.255
     width: 4
-  - action: {fileID: 11400000, guid: 98d819ab616f8264d8c4e4018c8d0c55, type: 2}
+  - action: {fileID: 11400000, guid: 70a6fd14a53aeea448e32881bd5308e1, type: 2}
     bias: 0.44
-    width: 4
-  - action: {fileID: 11400000, guid: cf71194fabc894b48a8ed6d3275414a5, type: 2}
-    bias: 0.458
     width: 4
   attackActions:
   - action: {fileID: 11400000, guid: bed3bf0111742e249a9238a0b41e441e, type: 2}

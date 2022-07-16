@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Character Action/Damage Action")]
 public class DamageAction : CharacterAction
 {
-    public override void DoAction()
+    public override void DoAction(Character caster, Character target)
     {
-       //Does damage to the enemy based on value
+        target.modToHealth -= value;
     }
 }

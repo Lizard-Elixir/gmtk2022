@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms;
 
 [CreateAssetMenu(menuName = "Character Action/Drain Action")]
 public class DrainAction : CharacterAction
@@ -8,9 +9,10 @@ public class DrainAction : CharacterAction
     [Header("Drain Variables")]
     [SerializeField]
     float drainHealingFactor; //% of damage given heals the player
-    public override void DoAction()
+    public override void DoAction(Character caster, Character target)
     {
-        //target takes *value* amount of damage, then user gains *drainHealingFactor*% of *value* in health.
+        caster.modToHealth += Mathf.RoundToInt(value * drainHealingFactor);
+        target.modToHealth -= value;
     }
 
 }

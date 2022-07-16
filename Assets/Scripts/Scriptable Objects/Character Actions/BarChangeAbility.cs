@@ -11,9 +11,9 @@ public class BarChangeAbility : CharacterAction
     [SerializeField]
     bool isPositive;
 
-    //TODO: Ability to select what bar this effects
+    //TODO: Ignore all this shit until after the jam if you want.
 
-    public override void DoAction()
+    public override void DoAction(Character caster, Character target)
     {
         if (OffenseAction)
         {

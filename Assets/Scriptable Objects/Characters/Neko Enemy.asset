@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Tabs, The Treasurer
   maxHealth: 150
+  modToHealth: 0
   magicActions:
   - action: {fileID: 11400000, guid: 0bd52917acff2594a8220d307c4cc53c, type: 2}
     bias: 0

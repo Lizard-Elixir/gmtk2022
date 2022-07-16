@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65e61f2d9acf1c408f167cdbd9f3ccf, type: 3}
-  m_Name: Blinding Lights
+  m_Script: {fileID: 11500000, guid: d7abadad14da8ad4e894a5a4e3ddc294, type: 3}
+  m_Name: Negate
   m_EditorClassIdentifier: 
-  name: Blinding Light
-  type: 1
-  value: 0
-  OffenseAction: 1
-  isPositive: 1
+  name: Negate
+  type: 2
+  value: 100

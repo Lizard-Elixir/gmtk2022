@@ -7,6 +7,9 @@ public class Character : ScriptableObject {
 	public new string name;
 	public int maxHealth = 100;
 
+    [HideInInspector]
+	public int modToHealth;
+
 	[NameElements]
 	public ActionData[] magicActions;
 	[NameElements]

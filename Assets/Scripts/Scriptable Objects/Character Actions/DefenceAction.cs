@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Character Action/Defence Action")]
 public class DefenceAction : CharacterAction
 {
-    public override void DoAction()
+    public override void DoAction(Character caster, Character target)
     {
-        //Negates *value* amount of damage from next incoming attack
+        if (caster.modToHealth < 0)
+        {
+            caster.modToHealth += Mathf.Min(value,caster.modToHealth * -1);
+        }
     }
 }

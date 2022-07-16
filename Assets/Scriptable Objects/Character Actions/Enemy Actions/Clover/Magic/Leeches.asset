@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Leeches
   type: 1
-  value: 0
-  drainHealingFactor: 0
+  value: 20
+  drainHealingFactor: 0.5

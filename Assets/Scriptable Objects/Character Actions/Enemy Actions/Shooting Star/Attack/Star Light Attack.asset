@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Light Attack
   type: 3
-  value: 0
+  value: 10
