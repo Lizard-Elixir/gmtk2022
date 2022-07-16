@@ -20,6 +20,8 @@ public class CharacterStatBar : MonoBehaviour {
 	private TextMeshProUGUI valueText;
 	[SerializeField]
 	private Button diceAssignButton;
+	[SerializeField]
+	private Button executeActionButton;
 
 	private RectTransform rt;
 
@@ -40,6 +42,15 @@ public class CharacterStatBar : MonoBehaviour {
 
 	public void DisableAssignDice() {
 		diceAssignButton.gameObject.SetActive(false);
+	}
+
+	public void ShowStatExecution(CharacterAction action) {
+		executeActionButton.gameObject.SetActive(true);
+		executeActionButton.GetComponent<TextMeshProUGUI>().text = action.name;
+	}
+
+	public void DisableExecuteStat() {
+		executeActionButton.gameObject.SetActive(false);
 	}
 
 	private void OnDestroy() {
