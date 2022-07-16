@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colour: {r: 0.6784314, g: 0.9490197, b: 0.7568628, a: 1}
   sizePerValue: 15
+  prefix: 
   currentValue: {fileID: 11400000, guid: 1afb0a5c78ac94a67a3fef46746cc651, type: 2}
   maxValue: {fileID: 11400000, guid: 8bb2b24bab241418b94d9c18cd989746, type: 2}
   fillImage: {fileID: 8887371409518822148}
@@ -864,7 +865,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 11bc5b18bb9c14d25a4cd069dbb03013, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf72ced3f22886142b9f69ddb5e8c227, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
