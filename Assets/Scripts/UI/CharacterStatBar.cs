@@ -9,6 +9,8 @@ public class CharacterStatBar : MonoBehaviour {
 	private Color colour;
 	[SerializeField]
 	private int sizePerValue;
+	[SerializeField]
+	private string prefix;
 
 	[SerializeField]
 	private IntVariable currentValue;
@@ -61,6 +63,6 @@ public class CharacterStatBar : MonoBehaviour {
 	private void UpdateValue() {
 		rt.sizeDelta = new Vector2(sizePerValue * maxValue.Value, rt.sizeDelta.y);
 		fillImage.fillAmount = (float)currentValue.Value / maxValue.Value;
-		valueText.text = $"{currentValue.Value}/{maxValue.Value}";
+		valueText.text = $"{prefix} {currentValue.Value}/{maxValue.Value}";
 	}
 }
