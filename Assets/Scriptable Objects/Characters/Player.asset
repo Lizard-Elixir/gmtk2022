@@ -15,35 +15,35 @@ MonoBehaviour:
   name: The Unlucky Player
   maxHealth: 100
   magicActions:
-  - action: {fileID: 11400000, guid: d17e772d6c1afc540a6ae6fc384f97bf, type: 2}
+  - action: {fileID: 11400000, guid: e30adf208b9401f409f7851e7dbcdde7, type: 2}
     bias: 0
     width: 6
-  - action: {fileID: 11400000, guid: 5d9f4a07dfc044051b31ebb45b480a1d, type: 2}
+  - action: {fileID: 11400000, guid: d31abd3704457904a9ace79547ae55f2, type: 2}
     bias: 0
     width: 3
-  - action: {fileID: 11400000, guid: 48cc527c7a4f545e4a89b29de5faf589, type: 2}
+  - action: {fileID: 11400000, guid: 8977e42d23ac410448f6a38806d68f16, type: 2}
     bias: 0
     width: 2
-  - action: {fileID: 11400000, guid: 54722336a54ec1546b2d706d2d3a8488, type: 2}
+  - action: {fileID: 11400000, guid: fbd48e01fc9ebfb44bc80d1793fd6402, type: 2}
     bias: 0
     width: 2
-  - action: {fileID: 11400000, guid: f8dfc0704847a794ab7940c5c49b779c, type: 2}
+  - action: {fileID: 11400000, guid: 8901186234db52949b9d6fd76e0cd858, type: 2}
     bias: 0
     width: 1
   defenseActions:
-  - action: {fileID: 11400000, guid: 694bb0d3f4b544ff88d7afac3ade687b, type: 2}
+  - action: {fileID: 11400000, guid: 9cd789b5bec77b947ad73e1cc391bdb3, type: 2}
     bias: 0
     width: 8
-  - action: {fileID: 11400000, guid: 290f31ecbb2e7469682638befa5e3371, type: 2}
+  - action: {fileID: 11400000, guid: cfa42ba2fd5ff654486fbb54f774de03, type: 2}
     bias: 0
     width: 6
   attackActions:
-  - action: {fileID: 11400000, guid: 64f8427c17cf444b08db26315a87608a, type: 2}
+  - action: {fileID: 11400000, guid: 3ce2139f24116fc4592da55b80803121, type: 2}
     bias: 0
     width: 7
-  - action: {fileID: 11400000, guid: b92b870ea107b409798e93104c95c8af, type: 2}
+  - action: {fileID: 11400000, guid: 4c33408f3288160488fef3e539d8a107, type: 2}
     bias: 0
     width: 4
-  - action: {fileID: 11400000, guid: 15533c715df39ae46bda5f5c25691ae2, type: 2}
+  - action: {fileID: 11400000, guid: 3f9028f0472fdf340ae1b9f767e31f67, type: 2}
     bias: 0
     width: 3

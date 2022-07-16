@@ -15,23 +15,29 @@ MonoBehaviour:
   name: Marinda, The Baroness of Clovers
   maxHealth: 100
   magicActions:
-  - action: {fileID: 11400000, guid: 08f1043b79d17494586dd90ba8be7e46, type: 2}
+  - action: {fileID: 11400000, guid: bc14b9d8008d2e94a86ce193dec1e335, type: 2}
     bias: 0
-    width: 6
-  - action: {fileID: 11400000, guid: 59d08adb6edf74a1db4335b44d74ece6, type: 2}
-    bias: 0
-    width: 3
+    width: 4
+  - action: {fileID: 11400000, guid: f6c0057673eb3cf458fee4c1b7572648, type: 2}
+    bias: 0.399
+    width: 4
+  - action: {fileID: 11400000, guid: d31a73c01893b7941b7f572233130244, type: 2}
+    bias: 0.301
+    width: 2
+  - action: {fileID: 11400000, guid: d21a7b2a5b85a1d4988b5bda8de894b7, type: 2}
+    bias: 0.622
+    width: 4
   defenseActions:
-  - action: {fileID: 11400000, guid: ca787c73300ec4aa1bd33c2e000c0bff, type: 2}
+  - action: {fileID: 11400000, guid: a62aa17ed1c22b644b81e2184731f85f, type: 2}
     bias: 0
-    width: 6
-  - action: {fileID: 11400000, guid: 720b3440686434a30b089e89ad1d28a9, type: 2}
-    bias: 0
-    width: 3
+    width: 10
+  - action: {fileID: 11400000, guid: 0e862355f5ac65e4f8fb81645e0c093d, type: 2}
+    bias: 0.715
+    width: 4
   attackActions:
-  - action: {fileID: 11400000, guid: 4e47c45c6290c4d3da4335b5d2209691, type: 2}
-    bias: 0
+  - action: {fileID: 11400000, guid: 8aab23eb156a91a45b92202540e8a7e6, type: 2}
+    bias: 0.235
+    width: 8
+  - action: {fileID: 11400000, guid: 4860e04ed371fee44875e165ee9f7f68, type: 2}
+    bias: 0.138
     width: 6
-  - action: {fileID: 11400000, guid: 51baad935f22944e89b2d23334e76b4d, type: 2}
-    bias: 0
-    width: 3
