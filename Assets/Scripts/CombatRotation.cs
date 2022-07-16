@@ -78,6 +78,97 @@ public class CombatRotation : MonoBehaviour {
 		onExecutionPhase.Invoke();
 	}
 
+
+	public void RollPlayerDice()
+    {
+		Debug.Log("Player Dice Rolled");
+		//D4
+		int d4Value = Random.Range(1, 5);
+		assignDiceResultToBar(d4Value, playerData,playerData.D4.Value);
+		//D6
+		int d6Value = Random.Range(1, 7);
+		assignDiceResultToBar(d6Value, playerData, playerData.D6.Value);
+		//D8
+		int d8Value = Random.Range(1, 7);
+		assignDiceResultToBar(d8Value, playerData, playerData.D8.Value);
+	}
+
+	public void RollEnemyDice()
+	{
+		Debug.Log("Enemy dice rolled");
+		//D4
+		int d4Value = Random.Range(1, 5);
+		assignDiceResultToBar(d4Value, enemyData, enemyData.D4.Value);
+		//D6
+		int d6Value = Random.Range(1, 7);
+		assignDiceResultToBar(d6Value, enemyData, enemyData.D6.Value);
+		//D8
+		int d8Value = Random.Range(1, 7);
+		assignDiceResultToBar(d8Value, enemyData, enemyData.D8.Value);
+	}
+
+
+	void assignDiceResultToBar(int dieResult, CharacterData data, ActionType actionType)
+    {
+		if (actionType == ActionType.Attack)
+		{
+			data.attack.SetValue(data.attack.Value + dieResult);
+		}
+		else if (actionType == ActionType.Defense)
+		{
+			data.defense.Value += dieResult;
+		}
+		else if (actionType == ActionType.Magic)
+		{
+			data.magic.Value += dieResult;
+        }
+        else
+        {
+
+        }
+	}
+
+	public void handleOverflow()
+    {   //player bars
+		Debug.Log("Handling overflow");
+        if (playerData.attack.Value > playerData.maxAttack.Value)
+        {
+			playerData.attack.Value = 0;
+			playerData.health.Value -= 20;
+			Debug.Log("Attack reset");
+		} 
+		if (playerData.defense.Value > playerData.maxDefense.Value)
+		{
+			playerData.defense.Value = 0;
+			playerData.health.Value -= 20;
+			Debug.Log("Defence reset");
+		}  
+		if (playerData.magic.Value > playerData.maxMagic.Value)
+		{
+			playerData.magic.Value = 0;
+			playerData.health.Value -= 20;
+			Debug.Log("magic reset");
+		}
+
+		//Enemy bars
+		if (enemyData.attack.Value > enemyData.maxAttack.Value)
+		{
+			enemyData.attack.Value = 0;
+			enemyData.health.Value -= 20;
+		}
+		if (enemyData.defense.Value > enemyData.maxDefense.Value)
+		{
+			enemyData.defense.Value = 0;
+			enemyData.health.Value -= 20;
+		}
+		if (enemyData.magic.Value > enemyData.maxMagic.Value)
+		{
+			enemyData.magic.Value = 0;
+			enemyData.health.Value -= 20;
+		}
+	}
+
+
 	[System.Serializable]
 	private class CharacterData {
 		public Character character;
